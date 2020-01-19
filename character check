@@ -1,0 +1,20 @@
+const countChar = (string, letter) => {
+  let result = 0;
+  for (i = 0; i <= string.length - 1; i++) {
+    if (string.charAt(i) === letter.toUpperCase() || string.charAt(i) === letter.toLowerCase()) {
+      result++;
+      }
+    }
+
+    if (result > 0) {
+        console.log(true)
+        console.log(`В этом предложение ${result} "${letter}"`);
+    }
+    else {
+      console.log(false);
+      console.log('Такого символа нет в этом предложении')
+    }
+
+}
+
+countChar('Где-то там падают звезды, там, далеко за морем', 'е')
